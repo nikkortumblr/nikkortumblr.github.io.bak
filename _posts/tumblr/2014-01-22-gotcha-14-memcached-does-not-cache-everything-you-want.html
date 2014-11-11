@@ -1,0 +1,8 @@
+---
+layout: post
+title: ! 'GOTCHA 14: Memcached does not cache everything you want'
+date: '2014-01-22T04:15:00+00:00'
+tags: []
+tumblr_url: http://drupalhook.tumblr.com/post/74157436397/gotcha-14-memcached-does-not-cache-everything-you-want
+---
+<section><dialog><dt>This Gotcha is provided by Ilmari:</dt><dd>In memcached, a single cache entry is limited to 1Mb. Memcached itself won’t show up any error if something doesn’t fit in it, it will just act as if there was no cache at all for that entry, which can make a site very slow. Cache bins that most often contain entries over 1Mb are those of views. That is why views bins would be the primary item I would/have put in Redis instead of memcached. This is a configuration example: </dd><dt></dt><dd># Cache bins. First cache_views, that doesn’t fit in memcached, and takes up to 30-40% CPU time of total when in MySQL. Redis works best.</dd><dt></dt><dd>$conf['cache_class_cache_views'] = 'Redis_Cache';</dd><dt></dt><dd>$conf['cache_class_cache_views_data'] = 'Redis_Cache';</dd></section></dialog>
