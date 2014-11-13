@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <title>
+    
+    Hyde, a Jekyll theme
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.png">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <header class="masthead">
+      <div class="masthead-inner">
+        <h1>Hyde</h1>
+        <p class="lead">An elegant open source and mobile first theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.</p>
+
+        <div class="colophon">
+          <ul class="colophon-links">
+            <li>
+              <a href="https://github.com/mdo/hyde/archive/v1.1.1.zip">Download</a>
+            </li>
+            <li>
+              <a href="https://github.com/mdo/hyde">GitHub project</a>
+            </li>
+            <li>Currently v1.1.1</li>
+          </ul>
+          <p>&copy; 2014.  All rights reserved.</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="content container">
+      <div class="posts">
+  
+  <div class="post">
+    <h1>
+      <a href="/2014/11/10/elasticsearch-ecosystem-in-drupal/">
+        Elasticsearch ecosystem in Drupal
+      </a>
+    </h1>
+
+    <span class="post-date">10 Nov 2014</span>
+
+    <blockquote>Elasticsearch ecosystem in Drupal</blockquote>&#8212;<a href="https://2014.drupalcamp-frankfurt.de/de/session/elasticsearch-ecosystem-drupal">Elasticsearch ecosystem in Drupal | DrupalCamp Frankfurt 2014</a>
+
+  </div>
+  
+  <div class="post">
+    <h1>
+      <a href="/2014/11/09/getting-content-to-a-phone-in-less-than-1000ms/">
+        Getting Content to a Phone in Less than 1000ms
+      </a>
+    </h1>
+
+    <span class="post-date">09 Nov 2014</span>
+
+    <a href="http://iamcarrico.github.io/content-to-phone-in-1000ms/#/">Getting Content to a Phone in Less than 1000ms</a><br/>
+
+  </div>
+  
+  <div class="post">
+    <h1>
+      <a href="/2014/11/07/via-drupal-7-32-is-an-absolutely-necessary/">
+        via drupal 7 32 is an absolutely necessary
+      </a>
+    </h1>
+
+    <span class="post-date">07 Nov 2014</span>
+
+    <img src="/tumblr_files/tumblr_nenxcl5oDU1tqgd06o1_1280.png"/><br/><p>(via <a href="https://www.ostraining.com/blog/drupal/drupal-7-32/">Drupal 7.32 is an Absolutely Necessary Update</a>)</p>
+
+  </div>
+  
+  <div class="post">
+    <h1>
+      <a href="/2014/11/06/the-50-best-drupal-themes-web-design-creative-bloq/">
+        The 50 best Drupal themes | Web design | Creative Bloq
+      </a>
+    </h1>
+
+    <span class="post-date">06 Nov 2014</span>
+
+    <a href="http://www.creativebloq.com/web-design/drupal-themes-6133264">The 50 best Drupal themes | Web design | Creative Bloq</a><br/>
+
+  </div>
+  
+  <div class="post">
+    <h1>
+      <a href="/2014/11/06/should-i-use-vagrant-or-docker-io-for-creating-an/">
+        Should I use Vagrant or Docker.io for creating an isolated environment?
+      </a>
+    </h1>
+
+    <span class="post-date">06 Nov 2014</span>
+
+    <p>I&#8217;m the author of Docker. The short answer is that if you want to manage machines, you should use Vagrant. And if you want to build and run applications environments, you should use Docker. Vagrant is a tool for managing virtual machines. Docker is a tool for building and deploying applications by packaging them into lightweight containers. A container can hold pretty much any software component along with its dependencies (executables, libraries, configuration files etc.), and execute it in a guaranteed and repeatable runtime environment. This makes it very easy to build your app once and deploy it anywhere - on your laptop for testing, then on different servers for live deployment etc. It&#8217;s a common misconception that you can only use Docker on Linux. That&#8217;s incorrect, you can also install Docker on Mac, and Windows support is underway. When installed on Mac, Docker bundles a tiny linux VM (25MB on disk!) which acts as a wrapper for your container. Once installed this is completely transparent, you can use the docker command-line in exactly the same way. This gives you the best of both worlds: you can test and develop your application using containers, which are very lightweight, easy to test and easy to move around (see for example <a href="https://index.docker.io">https://index.docker.io</a> for sharing reusable containers with the docker community), and you don&#8217;t need to worry about the nitty-gritty details of managing virtual machines, which are just a means to an end anyway. In theory it&#8217;s possible to use Vagrant as an abstraction layer for Docker. I recommend against this for 2 reasons: First, Vagrant is not a good abstraction for Docker. Vagrant was designed to manage virtual machines. Docker was designed to manage an application runtime. This means that Docker, by design, can interact with an application in richer ways, and has more information about the application runtime. The primitives in Docker are processes, log streams, environment variables and network links between components. The primitives in Vagrant are machines, block devices, and ssh keys. Vagrant simply sits lower in the stack, and the only way it can interact with a container is by pretending it&#8217;s just another kind of machine, that you can &#8220;boot&#8221; and &#8220;log into&#8221;. So, sure, you can type &#8220;vagrant up&#8221; with a docker plugin and something pretty will happen. Is it a substitute for the full breadth of what Docker can do? Try native Docker for a couple days and see for yourself :) Second, the lock-in argument. &#8220;If you use Vagrant as an abstraction, you will not be locked into Docker!&#8221;. From the point of view of Vagrant, which is designed to manage machines, this makes perfect sense: aren&#8217;t containers just another kind of machine? Just like EC2 and VMWare, we must be careful not to tie our provisioning tools to any particular vendor! This would create lock-in - better to abstract it all away with Vagrant. Except this misses the point of Docker entirely. Docker doesn&#8217;t provision machines, it wraps your application in a lightweight portable runtime which can be dropped anywhere. What runtime you choose for your application has nothing to do with how you provision your machines! For example it&#8217;s pretty frequent to deploy applications to machines which are provisioned by someone else (for example an EC2 instance deployed by your sysadmin, perhaps using Vagrant), or to bare metal machines which Vagrant can&#8217;t provision at all. Conversely, you may use Vagrant to provision machines which have nothing to do with developing your application - for example a ready-to-use Windows IIS box or something. Or you may use Vagrant to provision machines for projects which don&#8217;t use Docker - perhaps they use a combination of rubygems and rvm for dependency management and sandboxing for example. In summary: Vagrant is for managing machines, Docker is for building and running application environments.</p>
+
+  </div>
+  
+</div>
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/page3" class="older">Older</a>
+  
+  
+    
+      <a href="/" class="newer">Newer</a>
+    
+  
+</div>
+    </div>
+
+  </body>
+</html>
