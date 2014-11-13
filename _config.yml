@@ -12,3 +12,7 @@ github_username:  nikkortumblr
 
 # Build settings
 markdown: kramdown
+
+
+# Amount of posts to show on home page
+paginate: 5
