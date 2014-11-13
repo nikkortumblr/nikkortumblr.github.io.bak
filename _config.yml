@@ -1,7 +1,7 @@
-title:        Hyde
-tagline:      'Hyde, a Jekyll theme'
+title:        DrupalHook
+tagline:      'A drupal related blog'
 description:  'An elegant open source and mobile first theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:          http://andhyde.com
+url:          http://drupalhook.tumblr.com
 version:      1.1.1
 author:
   name:       ''
@@ -9,4 +9,4 @@ author:
 markdown:     rdiscount
 permalink:    pretty
 pygments:     true
-paginate:     5
+paginate:     20
