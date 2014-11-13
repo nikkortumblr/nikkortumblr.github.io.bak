@@ -1,18 +1,12 @@
-# Site settings
-title: DrupalHook
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: nikkortumblr
-github_username:  nikkortumblr
-
-# Build settings
-markdown: kramdown
-
-
-# Amount of posts to show on home page
-paginate: 5
+title:        Hyde
+tagline:      'Hyde, a Jekyll theme'
+description:  'An elegant open source and mobile first theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:          http://andhyde.com
+version:      1.1.1
+author:
+  name:       ''
+  email:      ''
+markdown:     rdiscount
+permalink:    pretty
+pygments:     true
+paginate:     5
